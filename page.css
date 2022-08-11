@@ -24,6 +24,10 @@ ul {
   margin-bottom: 15px;
   padding-left: 30px;
 }
+.titre i{
+  color: black;
+  padding-top: 13px;
+}
 
 .shrak {
   font-family: Shrikhand;
