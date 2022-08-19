@@ -157,6 +157,7 @@ p {
 .texte {
   font-size: 15px;
   padding-left: 10px;
+  padding-bottom: 10px;
   color: #646464;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -190,18 +191,33 @@ form {
 
 .Menu {
   position: relative;
-  padding-right: 15px;
-  width: 100%;
+  width: 95%;
+  transition: width 250ms ease-in-out;
+}
+.choix:hover .Menu{
+  width: 70%;
 }
 
-.Menu p {
+.intitulé {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 17px;
+  margin: 5px;
+  font-weight: bold;
 }
 
 .prix {
   font-weight: bold;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 5%;
+  align-self: end;
+    padding-bottom: 10px;
+    transition: width 250ms ease-in-out;
+}
+.choix:hover .prix {
+  width: 15%;
 }
 
 .fa-check {
@@ -234,8 +250,7 @@ form {
 }
 
 .choix:hover .validation {
-  width: 20%;
-  ;
+  width: 15%;
 }
 
 
@@ -291,4 +306,13 @@ footer div {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width : 450px) {
+  .Menu{
+    width: 80%;
+  }
+  .prix{
+width: 20%;
+  }
 }
